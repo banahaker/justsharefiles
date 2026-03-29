@@ -103,17 +103,3 @@ Please strictly adhere to the following rules when writing the code:
 2.  **Docker Compose Initialization:** Include a temporary `minio-setup` container using the `minio/mc` image. It must wait for the MinIO container to be healthy, then run `mc mb local/uploads` to create the bucket, set a 30-day lifecycle policy if possible, and exit.
 3.  **CORS:** The FastAPI app must configure CORS middleware to allow origins from the frontend domain.
 4.  **Frontend Implementation:** Build a clean, minimal UI using Next.js & TailwindCSS. It needs an upload dropzone (with file size validation on the client-side), an expiration time selector, a result screen showing the generated share link, and a download page that extracts the NanoID from the URL parameters to fetch the download link.
-
----
-**End of Spec**
----
-
-### 💡 如何使用這份 Spec？
-
-你把這份 Markdown 直接丟給 OpenSpec（或類似的 Vibe Coding 工具如 Cursor / GitHub Copilot Agent），它就能：
-1. 精準知道要開哪些資料夾。
-2. 知道 FastAPI 的 `requirements.txt` 要裝 `boto3` 跟 `nanoid`。
-3. 知道 `docker-compose.yml` 裡面需要寫一個 `minio-setup` 來避開我剛剛說的地雷。
-4. 知道產生 URL 時必須帶上 `attachment` 標頭防止 XSS（這是資安實力的展現）。
-
-這份 Spec 已經幫你把所有高階工程師的思維全部轉化成 AI 聽得懂的「指令」了。準備好讓 AI 幫你寫出這個驚豔面試官的專案了嗎？
