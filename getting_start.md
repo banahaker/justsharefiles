@@ -1,4 +1,4 @@
-# OpenSpec: Secure File Sharing Intern Project
+# OpenSpec: Secure File Sharing Application
 
 ## 1. Project Overview
 Build a secure, scalable, file-sharing web application. The application allows users to upload files and generate a hard-to-guess, temporary sharing link. Files are transferred directly between the client and MinIO (Object Storage) using Presigned URLs to decouple I/O from the backend server. 
