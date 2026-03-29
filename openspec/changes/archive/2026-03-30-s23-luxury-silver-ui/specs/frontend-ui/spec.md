@@ -1,4 +1,4 @@
-## Requirements
+## MODIFIED Requirements
 
 ### Requirement: Upload page provides drag-and-drop file selection with client-side validation
 The upload page SHALL use S23 Luxury Silver styling: silver-bg body, silver-surface card with silver shadow, 4px radius on all containers, Montserrat font with wide tracking. No blue or green accents.

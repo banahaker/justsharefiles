@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-bg-primary: #E5E5E5;
+  --color-bg-secondary: #D1D5DB;
+  --color-text-primary: #111827;
+  --color-brand-primary: #9CA3AF;
+  --color-brand-accent: #6B7280;
+  --radius-sm: 4px;
+  --shadow-silver: 0 10px 30px rgba(156, 163, 175, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* Visible focus rings for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--color-brand-accent);
+  outline-offset: 2px;
+}
