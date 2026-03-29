@@ -71,6 +71,15 @@ export default function DownloadPage() {
             </a>
             .
           </p>
+          <div className="mt-6 pt-6 border-t border-gray-100">
+            <p className="text-sm text-gray-400 mb-3">Want to share your own files?</p>
+            <a
+              href="/"
+              className="inline-block px-6 py-2.5 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors"
+            >
+              Share Your Own Files
+            </a>
+          </div>
         </div>
       </main>
     );
